@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    @media screen and (min-width:320px) and (max-width:425px) {
+        
+    
+          .top{
+            border: 1px solid black;
+            height: 600px;
+            background-color: orange;
+            display: grid;
+            grid-template-columns: repeat(6,100px)
+            gap: 20px;
+            justify-content: center;
+
+
+
+        }
+        .bottom{
+            background-color: darkgreen;
+            height: 50px;
+            width: 400px;
+            padding: 10px;
+            text-align: center;
+            justify-content: center;
+            
+        }
+    }
+    @media screen and (min-width:426px) and (max-width:768px) {
+        .top{
+            border: 1px solid black;
+            display: grid;
+            grid-template-columns: repeat(6,100px);
+            grid-template-rows: 200px 200px 200px;
+            justify-content: center;
+            gap: 10px;
+            background-color: aqua; width: 800px;
+
+        }
+        .bottom1{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            background-color: coral;
+            grid-column-start: 1;
+            grid-column-end: 6;
+
+        }
+       
+        .bottom2{
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            background-color: coral;
+            grid-row-start: 2;
+            grid-row-end: 4;
+
+        }
+        .bottom3{
+            background-color: coral;
+            grid-column-start: 2;
+            grid-column-end: 4;
+
+        }
+        .bottom4{
+            background-color: coral;
+            grid-column-start: 4;
+            grid-column-end: 6;
+
+        }
+        .bottom5{
+            background-color: coral;
+            grid-column-start: 2;
+            grid-column-end: 6;
+
+        }
+    }
+    @media screen and (min-width:769px) and (max-width:1440px) {
+        body{
+            background-color: black;
+            color: whitesmoke;
+            text-align: center;
+        }
+       input[type="text1"]{
+        background-color: yellow;
+        
+       }
+       input[type="text2"]{
+        background-color: orange;
+       }
+       input[type="text3"]{
+        background-color: green;
+       }
+       input[type="text4"]{
+        background-color: blue;
+       }
+       input[type="text5"]{
+        background-color: purple;
+       }
+       input[type="text6"]{
+        background-color: lawngreen;
+       }
+       input[type="numbers1"]{
+        background-color: darkred;
+       }
+       
+       input[type="submit"]{
+        background-color: midnightblue;
+       }
+       input[type="radio"]{
+        background-color: darkorange;
+       }
+       input[type=Time]{
+        background-color: goldenrod;
+       }
+    }
+    
+
+    
+      
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="bottom">one</div>
+        <div class="bottom">Two</div>
+        <div class="bottom">Three</div>
+        <div class="bottom">four</div>
+        <div class="bottom">five</div>
+        <div class="bottom">six</div>
+    </div>
+    <div class="top">
+        <div class="bottom1">header</div>
+        <div class="bottom2">menu</div>
+        <div class="bottom3">main</div>
+        <div class="bottom4">right</div>
+        <div class="bottom5">footer</div>
+        
+        
+
+
+
+    </div>
+    <form>
+        <h>Application Form</h><br><br>
+        <lable for="First name">First name:</lable>
+        <input type="text1" id="first name" name="first name"placeholder="first" required>
+        <lable for="Second name">Second name:</lable>
+        <input type="text2" id="second name" name="Second name"placeholder="second" ><br><br><br>
+        <lable for="Emailaddrs">Email Address:</lable>
+        <input type="text3" id="Emailaddrs" name="Email Address"><br><br><br>
+        <label for=" Address"> Address:</label>
+        <input type="text4" id=" Address"name=" address"placeholder=" Address1">
+        <input type="text5" id=" Address"name=" address"placeholder="Street Address Line2"><br><br><br>  
+        <lable for="City">City:</lable>
+        <input type="text6" id="City" name="City">
+        <lable for="Postal Code">Postal code:</lable>
+        <input type="numbers1" id="Postal Code" name="Postal Code"placeholder="postal/zip code">
+        <br><br><br><br>
+        <tr>
+            <td><label for="Types of preferred ">Types of Preffered</label></td><br><br>
+             <td><input type="radio" id= "Types of Preferred" name="Preferred"value="Margherita">Magherita</td>
+                <td><input type="radio" id="Types of Preferred" name="Preferred"value="Mushrooms">Mushrooms</td>
+                <td><input type="radio" id="Types of Preferred" name="Preferred"value="paneer">Panner</td>
+                    <td><input type="radio" id="Types of Preferred" name="Preferred"value="Corn">Corn</td>
+                        <td><input type="radio" id="Types of Preferred" name="Preferred" value="Capsicum">Capsicum</td></tr>
+        
+        <br><br><br><br>
+        <label for="Time">Time</label>
+        <input  type="Time" id="Time" name="Time"><br><br>
+        <input type="submit"value="submit">
+        </form>
+    
+</body>
+</html>
